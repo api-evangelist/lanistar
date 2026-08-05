@@ -42,5 +42,11 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lanistar is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/lanistar-stock
+Lanistar was a London-based consumer fintech founded in 2019 by Gurhan Kiziloz, known for a heavily influencer-marketed "polymorphic" Mastercard debit card with an on-card keypad and display that generated single-use PIN and CVV2 codes. Lanistar Limited operated as an EMD agent of Modulr FS Limited under FCA authorisation, with cards issued by AF Payments Limited, and pivoted its consumer launch to Brazil where it offered a mobile account, Pix transfers and in-app crypto buying and selling.
+
+The company never operated a developer program: no public API, developer portal, OpenAPI or other machine-readable contract, SDK, or public GitHub repository was ever published. Lanistar Limited (company number 12091938) was placed into compulsory liquidation by a court winding-up order filed 14 April 2025, and its public surface has since gone dark — `lanistar.com` and `lanistar.app` no longer resolve to any web host, `lanistar.co.uk` is listed for sale by a domain broker, and the `com.lanistar` Google Play listing has been removed.
+
+This profile is retained as a historical record; there is no API surface to enrich.
+
+- Companies House — LANISTAR LIMITED (12091938): https://find-and-update.company-information.service.gov.uk/company/12091938
+- Hiive secondary-market listing: https://www.hiive.com/securities/lanistar-stock

@@ -1,17 +1,61 @@
 aid: lanistar
 name: Lanistar
-description: 'Lanistar is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Lanistar was a London-based consumer fintech founded in 2019 by Gurhan Kiziloz,
+  known for a heavily influencer-marketed "polymorphic" Mastercard debit card with an on-card
+  keypad and display that generated single-use PIN and CVV2 codes. Lanistar Limited operated as
+  an EMD agent of Modulr FS Limited under FCA authorisation, with cards issued by AF Payments
+  Limited, and pivoted its consumer launch to Brazil where it offered a mobile account, Pix
+  transfers and in-app crypto buying and selling. The company never operated a developer program:
+  no public API, developer portal, OpenAPI or other machine-readable contract, SDK, or public
+  GitHub repository was ever published. Lanistar Limited (company number 12091938) was placed into
+  compulsory liquidation by a court winding-up order filed 14 April 2025, and its public surface
+  has since gone dark — lanistar.com and lanistar.app no longer resolve to any web host, the
+  lanistar.co.uk domain is listed for sale by a domain broker, and the com.lanistar Google Play
+  listing has been removed. This profile is retained as a historical record; there is no API
+  surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/lanistar/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
+x-tier-reason: defunct-no-api-surface
+x-status: liquidation
+x-status-source: https://find-and-update.company-information.service.gov.uk/company/12091938
+x-company-number: '12091938'
+x-jurisdiction: GB
+x-incorporated: '2019-07-08'
+x-winding-up-order: '2025-04-14'
+x-domain-status: dark
+x-domain-note: 'lanistar.com is still registered (GoDaddy, Cloudflare NS, expiry 2029-09-27) and
+  still carries Google Workspace MX plus an SPF record, but the zone publishes no A, AAAA or
+  CNAME record, so every HTTP probe fails at DNS resolution. lanistar.app and www.lanistar.app do
+  not resolve. lanistar.co.uk resolves to a Spaceship.com domain-for-sale parking page and is not
+  the company. lanistar.com.br is an unrelated Brazilian influencer-marketing site ("Lanislar
+  Creator") and is deliberately not wired as a Website pointer.'
+x-contract-discovery:
+  date: '2026-08-04'
+  result: none
+  note: 'No machine-readable contract found. All probes failed at DNS resolution because no
+    Lanistar-controlled host resolves. Probed /.well-known/security.txt, /.well-known/agent-card.json,
+    /openapi.json and /llms.txt on lanistar.com and www.lanistar.com (all HTTP 000, NXDOMAIN-class
+    resolution failure). github.com/lanistar exists but publishes zero public repositories. A
+    Wayback CDX inventory of 900 archived lanistar.com URLs contains no api/developer/docs/swagger/
+    openapi/graphql path; the only archived /.well-known/* 200s are single-page-app soft-404s from
+    2025-07-22, and the pre-2020 archived content belongs to an unrelated "Lani Star" vocal-coaching
+    blog that previously held the domain.'
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Defunct
+- Financial Services
+- Fintech
+- Banking
+- Payments
+- Debit Cards
+- Neobank
+- United Kingdom
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +63,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
+- type: CompanyRegistration
+  name: Companies House — LANISTAR LIMITED (12091938)
+  url: https://find-and-update.company-information.service.gov.uk/company/12091938
+- type: SecondaryMarket
+  name: Hiive secondary-market listing
   url: https://www.hiive.com/securities/lanistar-stock
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
