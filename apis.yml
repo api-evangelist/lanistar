@@ -42,7 +42,7 @@ x-contract-discovery:
     openapi/graphql path; the only archived /.well-known/* 200s are single-page-app soft-404s from
     2025-07-22, and the pre-2020 archived content belongs to an unrelated "Lani Star" vocal-coaching
     blog that previously held the domain.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
